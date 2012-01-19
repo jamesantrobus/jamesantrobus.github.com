@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>{% if page.title_override %} {{ page.title_override }} {% else %} {{ page.title }} | james antrobus {% endif %}</title>
+	{% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+	<meta name="author" content="{{ site.author.name }}">
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="/assets/stylesheets/base.css">
+	<link rel="stylesheet" href="/assets/stylesheets/skeleton.css">
+	<link rel="stylesheet" href="/assets/stylesheets/layout.css">
+	<link rel="stylesheet" href="/assets/stylesheets/syntax.css">
+
+	<link rel="shortcut icon" href="/assets/images/favicon.ico">
+</head>
+<body>
+
+	<div class="container">
+		
+		<div class="twelve columns">
+			<h1>{{ page.title }}</h1>
+			{{ content }}
+		</div>
+		
+		<div class="four columns">
+			<h2>About me</h2>
+			<p>Hi, I'm James Antrobus. I'm a software developer in the UK. You can find me on <a href="http://twitter.com/james_antrobus">Twitter</a>, <a href="http://uk.linkedin.com/pub/james-antrobus/30/59/7b3">LinkedIn</a> and <a href="mailto:james@antrob.us">email</a>.</p>
+		</div>
+		
+	</div>
+	
+	<script>	
+	window.onload = function ()
+	{
+		setTimeout(function () {
+		  window.scrollTo(0, 1);
+		}, 1000);		
+	}
+	</script>
+
+</body>
+</html>
