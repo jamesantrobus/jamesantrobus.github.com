@@ -1,5 +1,3 @@
-# This is the default format. 
-# For more see: https://github.com/mojombo/jekyll/wiki/Permalinks
 permalink: /:year/:month/:day/:title 
 auto: true
 pygments: true
@@ -9,8 +7,8 @@ var:
   tags_path : /tags.html
   rss_path: /atom.xml
 
-production_url : http://username.github.com # or your custom domain name
-title : James Antrobus - Blog
+production_url : http://blog.antrob.us
+title : James Antrobus
 
 author :
   name : James Antrobus
