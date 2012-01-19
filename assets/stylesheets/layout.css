@@ -42,8 +42,8 @@ p {
 }
 
 .two-thirds {
-	text-align:justify;
-	text-justify:inter-word;
+	text-align: justify;
+	text-justify: inter-word;
 }
 
 .highlight {
@@ -100,7 +100,7 @@ text-decoration: underline;
 
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 	@media only screen and (max-width: 479px) {
-		.container { margin-top: 20px; }
+		.container { margin-top: 20px; min-height: 480px; }
 		h1 { margin-bottom: 20px; }
 		li span {
 			display: block;
