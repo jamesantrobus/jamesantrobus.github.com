@@ -29,9 +29,18 @@ h1 {
 
 h2 {
 	font-family: 'Arvo', Georgia, Times, serif;
-	font-size: 20px;
+	font-size: 30px;
 	line-height: 45px;
 	color: rgb(153,153,153);
+	margin-bottom: 45px;
+}
+
+h3 {
+	font-family: 'Arvo', Georgia, Times, serif;
+	font-size: 25px;
+	line-height: 30px;
+	color: rgb(153,153,153);
+	margin-bottom: 20px;
 }
  
 p {
@@ -39,11 +48,6 @@ p {
 	font-size: 18px;
 	line-height: 35px;
 	color: rgb(47,47,47);
-}
-
-.two-thirds {
-	text-align: justify;
-	text-justify: inter-word;
 }
 
 .highlight {
@@ -60,6 +64,9 @@ li {
 	line-height: 35px;
 	color: rgb(47,47,47);
 }
+
+ul.listing li { list-style-type: none; margin-left: 0px; }
+li { list-style-type: square; margin-left: 40px; line-height: 18px; }
 
 li span {
 	padding-right: 25px;
@@ -80,6 +87,17 @@ color: rgb(153,153,153);
 text-decoration: underline;
 }
 
+.twelve .content {
+	text-align: justify;
+	text-justify: inter-word;
+	padding-right: 30px;
+}
+
+.four {
+	text-align: justify;
+	text-justify: inter-word;
+}
+
 /* #Page Styles
 ================================================== */
 
@@ -90,7 +108,11 @@ text-decoration: underline;
 	@media only screen and (max-width: 959px) {}
 
 	/* Tablet Portrait size to standard 960 (devices and browsers) */
-	@media only screen and (min-width: 768px) and (max-width: 959px) {}
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+		.container .twelve.columns { width: 100%; }		
+		.container .four.columns { width: 100%; }		
+		.four .content { padding-right: 20px; }
+	}
 
 	/* All Mobile Sizes (devices and browser) */
 	@media only screen and (max-width: 767px) {}
@@ -102,9 +124,8 @@ text-decoration: underline;
 	@media only screen and (max-width: 479px) {
 		.container { margin-top: 20px; min-height: 480px; }
 		h1 { margin-bottom: 20px; }
-		li span {
-			display: block;
-		}
+		li span { display: block; }		
+		p {	font-size: 18px; line-height: 29px;	}
 	}
 
 
