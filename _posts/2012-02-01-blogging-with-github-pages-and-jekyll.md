@@ -26,7 +26,7 @@ Jekyll is convention-heavy and knows where to look for your blog posts and inclu
 {{ "{% endfor" }} %}
 {% endhighlight %}
 
-When the Jekyll command is ran the \_posts directory gets traversed and parsed to list out the posts in the static site generated.
+When the Jekyll command is ran the \_posts directory gets traversed and parsed to list out the posts in the static site generated. Posts can be written in a few different formats but Markdown is what I'm using for [this post][5].
 
 Admittedly I didn't see the point of Jekyll a while ago. If you're going to deal with posts, categories and tags it must be better to use a database rather than plain-text files, right? It certainly won't be for everyone but I love the simplicity.
 
@@ -38,3 +38,4 @@ I haven't covered much but there are plenty of resources around to get started. 
 [2]: https://github.com/mojombo/jekyll
 [3]: https://github.com/mojombo/jekyll/wiki/template-data
 [4]: https://github.com/plusjade/jekyll-bootstrap
+[5]: https://raw.github.com/jamesantrobus/jamesantrobus.github.com/master/_posts/2012-02-01-blogging-with-github-pages-and-jekyll.md
