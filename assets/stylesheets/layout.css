@@ -98,6 +98,8 @@ text-decoration: underline;
 	text-justify: inter-word;
 }
 
+img { max-width: 100%; }
+
 /* #Page Styles
 ================================================== */
 
