@@ -65,7 +65,9 @@ li {
 	color: rgb(47,47,47);
 }
 
-ul.listing li { list-style-type: none; margin-left: 0px; }
+ul.listing li { list-style-type: none; margin-left: 0px; padding-left: 0px; }
+ul.listing li span { float: left; width: 110px; padding-right: 15px }
+ul.listing li a { padding-left: 15px; }
 li { list-style-type: square; margin-left: 40px; line-height: 30px; }
 
 li span {
