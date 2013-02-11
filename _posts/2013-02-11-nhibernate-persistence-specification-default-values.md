@@ -30,6 +30,6 @@ Taking a look at the code for [VerifyTheMappings()][1] we can see that it will:
 
 Knowing this, we can make the test above pass without even mapping IsActive. VerifyTheMappings will persist the Developer object without the unmapped IsActive property. It will then instantiate a new Developer object where IsActive is false by default, before comparing them and passing the test.
 
-Likewise if we set IsActive to true in the parameterless constructor we can also make the test pass using true as the test value. Boolean is obviouslly the easiest one to spot, enums (where the first item has a value of 0) are slightly harder.
+Likewise if we set IsActive to true in the parameterless constructor we can also make the test pass using true as the test value. Boolean is obviously the easiest one to spot, enums (where the first item has a value of 0) are slightly harder.
 
 [1]: https://github.com/jagregory/fluent-nhibernate/blob/4900f065537142e6f36e6520840195a65ef8d10f/src/FluentNHibernate/Testing/PersistenceSpecification.cs#L43-L67
